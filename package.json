@@ -6,6 +6,7 @@
   "repository": "https://github.com/SK02K1/webpack-starter.git",
   "author": "SK02K1 <ksourabh458@gmail.com>",
   "license": "MIT",
+  "browserslist": "> 0.25%, not dead",
   "scripts": {
     "start": "webpack serve --config webpack/webpack.config.js --env env=dev",
     "build": "webpack --config webpack/webpack.config.js --env env=prod"
@@ -16,5 +17,10 @@
     "webpack-cli": "^5.0.0",
     "webpack-dev-server": "^4.11.1",
     "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0"
   }
 }
