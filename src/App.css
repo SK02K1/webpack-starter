@@ -1,6 +1,26 @@
 .App {
   height: 100vh;
   display: flex;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
+}
+
+.tanay {
+  display: inline-block;
+  width: 50%;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .tanay {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tanay {
+    width: 15%;
+  }
 }
