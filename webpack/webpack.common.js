@@ -33,6 +33,20 @@ const webpackConfig = {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        dependency: { not: ['url'] },
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+              encoding: true,
+            },
+          },
+        ],
+        type: 'asset',
+      },
     ],
   },
 };
