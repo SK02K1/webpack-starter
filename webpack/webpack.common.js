@@ -35,7 +35,17 @@ const webpackConfig = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        dependency: { not: ['url'] },
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+              encoding: true,
+            },
+          },
+        ],
+        type: 'asset',
       },
     ],
   },

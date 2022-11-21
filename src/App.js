@@ -1,5 +1,6 @@
 import './App.css';
 import Tanay from './tanay.gif';
+import Logo from './logo.svg';
 
 const App = ({ header }) => {
   return `
@@ -9,6 +10,11 @@ const App = ({ header }) => {
         class="tanay" 
         src=${Tanay} 
         alt="omg-tanay" 
+      />
+      <img 
+        class="logo" 
+        src=${Logo} 
+        alt="logo" 
       />
     </div>
   `;
