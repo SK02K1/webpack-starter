@@ -45,7 +45,7 @@ const webpackConfig = {
             },
           },
         ],
-        type: 'asset',
+        type: 'javascript/auto',
       },
     ],
   },
