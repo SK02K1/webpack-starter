@@ -1,0 +1,22 @@
+.App {
+  padding: 1rem;
+}
+
+h1,
+h2,
+p {
+  margin: 1rem 0;
+}
+
+img {
+  display: block;
+  margin: 1rem auto;
+}
+
+button {
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
