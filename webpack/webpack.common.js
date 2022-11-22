@@ -10,6 +10,10 @@ const webpackConfig = {
     clean: true,
   },
 
+  resolve: {
+    modules: [path.resolve(__dirname, '../', 'src'), 'node_modules'],
+  },
+
   plugins: [
     new HtmlWebpackPlugin({
       title: 'vanillaJS app',

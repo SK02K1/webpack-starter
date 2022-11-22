@@ -1,0 +1,15 @@
+.omg-tanay {
+  width: 30%;
+}
+
+@media screen and (min-width: 768px) {
+  .omg-tanay {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .omg-tanay {
+    width: 12%;
+  }
+}
